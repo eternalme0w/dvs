@@ -61,10 +61,14 @@ body {
     border-radius: 15px 15px 0 0;
 }
 
+.LETI {
+
+    letter-spacing: 1.5px;
+}
+
 .log-btn {
 
     padding-left: 38px;
-
 }
 
 .content-container {
@@ -233,6 +237,25 @@ body {
 .page-exit:hover {
 
     cursor: pointer;
+    background: #c8c4eefd;
+    transform:translateY(-0.35px)
+}
+
+
+.folder-icon:hover {
+    
+    transform: translateY(-5px);
+    transform: translateY(-3px);}
+
+.file-icon:hover {
+
+    transform: translateY(-5px);
+    transform: translateY(-3px);
+}
+
+.log-btn:hover{
+
+    color:#d5d4e4
 }
 
 
