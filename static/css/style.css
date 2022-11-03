@@ -233,19 +233,22 @@ body {
 .page-exit:hover {
 
     cursor: pointer;
+    background: #c8c4eefd;
+    transform:translateY(-0.35px)
 }
 
 .folder-icon:hover{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .file-icon:hover{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .log-btn:hover{
     color:#d5d4e4
 }
+
 
 
 
