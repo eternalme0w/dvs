@@ -235,5 +235,18 @@ body {
     cursor: pointer;
 }
 
+.folder-icon:hover{
+    transform: translateY(-5px);
+}
+
+.file-icon:hover{
+    transform: translateY(-5px);
+}
+
+.log-btn:hover{
+    color:#d5d4e4
+}
+
+
 
 
