@@ -255,13 +255,9 @@ body {
 
 .schedule-page-content {
 
+    padding: 30px 0 0 0;
     display: flex;
-    justify-content: space-between;
-}
-
-.page-content {
-
-    padding: 5px;
+    justify-content: center;
 }
 
 .tr-head {
@@ -282,6 +278,7 @@ body {
 }
 
 
+
 table,
 td {
 
@@ -290,22 +287,19 @@ td {
     text-align: center;
     padding: 5px;
     border: 2px solid #333;
-
+    margin-bottom: 10px;    
 }
 
-.schedule-arrow-container {
+.prev-next-sc {
 
+    font-weight: bold;
+    font-size: 32px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.arrow {
 
-    height: 40px;
-    width: 40px;
-}
 
 
 
