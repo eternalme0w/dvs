@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 	const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-	const days = ["Mon","	Tues","Wed","Thurs","Fri","Sat","Sun"];
+	const days = ["Mon","Tues","Wed","Thurs","Fri","Sat","Sun"];
 
 	setInterval(() => {
 
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		let month = months[nm]
-		let day = days[nd]
+		let day = days[nd - 1]
 
 		time = day + " " + h + ":" + m
 

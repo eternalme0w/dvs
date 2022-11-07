@@ -169,7 +169,7 @@ body {
 .lines {
 
     position: relative;
-    height: 30px;
+    height: 29px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -186,10 +186,11 @@ body {
 .page-title {
     
     padding-left: 5px; 
-    border: 1px solid black;
+    border: 4px solid white;
     padding-right: 5px;
     padding-top: 1px;   
-    font-size: 25px;
+    font-size: 23px;
+    font-weight: bold;
     background: white;
     align-self: center;
     display: block;
@@ -242,20 +243,56 @@ body {
 }
 
 
-.folder-icon:hover {
-
-    transform: translateY(-3px);
-}
-
-.file-icon:hover {
-
-    transform: translateY(-3px);
+.block:active{
+    background: white;
+    filter: invert(1);
 }
 
 .log-btn:hover{
 
     color:#d5d4e4
 }
+
+.schedule-page-content {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content {
+
+    padding: 5px;
+}
+
+.tr-head {
+    background-color: rgb(24, 22, 22);
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.tr-content {
+
+    font-size: 25px;
+}
+
+.td-info {
+
+    min-width: 600px;
+}
+
+
+
+table,
+td {
+
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #333;
+
+}
+
 
 
 
