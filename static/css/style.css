@@ -293,11 +293,21 @@ td {
 
 .schedule-arrow {
 
-    width: 100px;
+    display: flex;
+    align-items: center;
+    width: 50px;
     height: 600px;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }
 
+.schedule-arrow:hover {
+    background-color: #d5d4e4;
+}
 
+.arrow-img{
+    width: 100%;
+}
 
-
+.schedule-arrow-left{
+    transform: rotate(180deg);
+}
