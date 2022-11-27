@@ -1,5 +1,7 @@
 from flask import Blueprint, render_template
 import pendulum
+from flask_login import current_user
+
 from .static.sc.schedule import date_schedule, get_date
 
 views = Blueprint('views', __name__)
@@ -36,5 +38,7 @@ def scdate(n, m, y):
         page_class = 'schedule-page', page_title = 'schedule', 
         sc_date = d, sc = today_sc, current_date = date, pendulum = pendulum)
 
-
+@views.route('profile')
+def profile():
+    return  render_template('profile.html', group=current_user.group)
 
