@@ -1,10 +1,12 @@
 from flask import Blueprint, render_template
 import pendulum
 from flask_login import current_user
+from flask_restful import Resource
 
 from .static.sc.schedule import date_schedule, get_date
 
 views = Blueprint('views', __name__)
+
 
 @views.route('/')
 def main():
