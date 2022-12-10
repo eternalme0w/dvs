@@ -27,12 +27,19 @@ def create_app():
 
     from .views import views
     from .auth import auth
-    from .api import ToList, Schedule
+    from .api import Schedule
+
+    from .Todolist import GetList, DeleteTask, PostTask, PutComplete
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
 
     #api.add_resource(ToList, '/testapi')
     api.add_resource(Schedule, '/testapi')
+
+    api.add_resource(GetList, '/get_list')
+    api.add_resource(PostTask, '/post_task')
+    api.add_resource(DeleteTask, '/delete_task/<int:k>')
+    api.add_resource(PutComplete, '/put_complete/<int:k>')
 
     return app

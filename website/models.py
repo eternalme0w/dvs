@@ -20,7 +20,7 @@ class List(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.String(200))
     deadline = db.Column(db.String(10))
-    complete = db.Column(db.Boolean)
+    complete = db.Column(db.Boolean, default=False)
 
 
 ListFields = {
