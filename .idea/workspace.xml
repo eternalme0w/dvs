@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="078a436c-78bb-4d1b-a866-c65b3dbb99d5" name="Changes" comment="создал бд для todolist и че то потыкал в инит и ауз забейте я уже забыл скорее всего ничего не изменилось">
-      <change afterPath="$PROJECT_DIR$/website/todo.py" afterDir="false" />
+    <list default="true" id="078a436c-78bb-4d1b-a866-c65b3dbb99d5" name="Changes" comment="небольшая наработка еще для тудулист, вроде ничего не сломал">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/sc/schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/sc/schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/todo.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,14 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/timur/PycharmProjects/FlaskAPP"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/timur/PycharmProjects/Machine-Learn&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dvs" />
@@ -170,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669750490571</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="небольшая наработка еще для тудулист">
+      <created>1670625256087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670625256087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="небольшая наработка еще для тудулист, вроде ничего не сломал">
+      <created>1670625280176</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670625280176</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +221,8 @@
     <MESSAGE value="добавил регистрацию" />
     <MESSAGE value="добавил бд для регистрации, там 3 группы уже есть" />
     <MESSAGE value="создал бд для todolist и че то потыкал в инит и ауз забейте я уже забыл скорее всего ничего не изменилось" />
-    <option name="LAST_COMMIT_MESSAGE" value="создал бд для todolist и че то потыкал в инит и ауз забейте я уже забыл скорее всего ничего не изменилось" />
+    <MESSAGE value="небольшая наработка еще для тудулист" />
+    <MESSAGE value="небольшая наработка еще для тудулист, вроде ничего не сломал" />
+    <option name="LAST_COMMIT_MESSAGE" value="небольшая наработка еще для тудулист, вроде ничего не сломал" />
   </component>
 </project>

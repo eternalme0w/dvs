@@ -103,7 +103,7 @@ for row in range(row_start, sheet.max_row):
     groups[gr][wk-1][d].append({
 
         "time": sheet[row][time].value,
-        "subject": sheet[row][subject].value,
+        "subject":sheet[row][subject].value,
         "teacher": sheet[row][teacher].value,
         "place": sheet[row][aud].value
 

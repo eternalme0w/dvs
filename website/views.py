@@ -37,8 +37,8 @@ def scdate(n, m, y):
     d = date.strftime("%d/%m/%Y")
     today_sc = date_schedule(1307, date)
     return render_template('schedule.html',
-        page_class = 'schedule-page', page_title = 'schedule', 
-        sc_date = d, sc = today_sc, current_date = date, pendulum = pendulum)
+        page_class = 'schedule-page', page_title='schedule',
+        sc_date = d, sc = today_sc, current_date=date, pendulum=pendulum)
 
 @views.route('profile')
 def profile():
