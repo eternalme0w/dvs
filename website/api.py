@@ -6,12 +6,6 @@ from .models import List, ListFields, User, UserFields
 from .static.sc.schedule import date_schedule, get_date
 
 
-# class ToList(Resource):
-#     @marshal_with(UserFields)
-#     def get(self):
-#         list = User.query.all()
-#         return list
-
 class Schedule(Resource):
     def get(self):
         date = get_date([10, 12, 2022])
