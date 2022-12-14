@@ -17,8 +17,6 @@ def login():
 def login_post():
     group = request.form.get('group')
     password = request.form.get('password')
-
-
     user = User.query.filter_by(group=group).first()
 
     if not user or not check_password_hash(user.password, password):

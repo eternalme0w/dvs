@@ -42,5 +42,5 @@ def scdate(n, m, y):
 
 @views.route('/profile')
 def profile():
-    return  render_template('profile.html', group=current_user.group)
+    return  render_template('todo.html', group=current_user.group)
 

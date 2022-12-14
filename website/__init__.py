@@ -12,9 +12,6 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 
     api = Api(app)
-
-
-
     db.init_app(app)
 
     login_manager = LoginManager()
@@ -30,11 +27,13 @@ def create_app():
     from .views import views
     from .auth import auth
     from .api import Schedule
+    from .todo import todo
 
-    from .Todolist import GetList, DeleteTask, PostTask, PutComplete
+    from .todo_api import GetList, DeleteTask, PostTask, PutComplete
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
+    app.register_blueprint(todo,url_prefix='/')
 
     #api.add_resource(ToList, '/testapi')
     # api.add_resource(Schedule, '/testapi')

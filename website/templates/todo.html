@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+
+  <div>TO DO LIST !</div
+    <div>
+      <div class="fulltable no-copy">
+        <div class="scroll-table no-copy">
+
+            <table >
+                <thead>
+                    <tr class="tr-head no-copy">
+                        <td class="td-time">info</td>
+                        <td class="td-info">deadline</td>
+                        <td class="td-place">complete</td>
+                    </tr>
+                </thead>
+            </table>
+
+            <div class="scroll-table-body">
+
+                <table class="head-table">
+                    <tbody>
+                    {% if res.len == 0 %}
+                        <h1>
+                            There are not tasks
+                        </h1>
+                    {% else %}
+                        {% for i in range(len)%}
+                                <tr class="tr-content no-copy">
+                                    <td class="td-time">{{res[i]['text']}}</td>
+                                    <td class="td-time">{{res[i]['deadline']}}</td>
+                                    <td class="td-time">{{res[i]['complete']}}</td>
+                                </tr>
+                        {% endfor %}
+                    {% endif %}
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</h1>
+{% endblock %}
