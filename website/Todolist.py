@@ -17,7 +17,7 @@ class PostTask(Resource):
         task = List(text=data["text"], deadline=data["deadline"])
         db.session.add(task)
         db.session.commit()
-        return task, 202
+        return ("succesfully posted a new task")
 
 class DeleteTask(Resource):
     @marshal_with(ListFields)

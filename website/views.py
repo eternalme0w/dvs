@@ -40,7 +40,7 @@ def scdate(n, m, y):
         page_class = 'schedule-page', page_title='schedule',
         sc_date = d, sc = today_sc, current_date=date, pendulum=pendulum)
 
-@views.route('profile')
+@views.route('/profile')
 def profile():
     return  render_template('profile.html', group=current_user.group)
 

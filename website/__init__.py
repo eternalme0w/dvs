@@ -13,6 +13,8 @@ def create_app():
 
     api = Api(app)
 
+
+
     db.init_app(app)
 
     login_manager = LoginManager()
@@ -35,7 +37,7 @@ def create_app():
     app.register_blueprint(auth, url_prefix='/')
 
     #api.add_resource(ToList, '/testapi')
-    api.add_resource(Schedule, '/testapi')
+    # api.add_resource(Schedule, '/testapi')
 
     api.add_resource(GetList, '/get_list')
     api.add_resource(PostTask, '/post_task')

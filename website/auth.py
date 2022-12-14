@@ -17,7 +17,7 @@ def login():
 def login_post():
     group = request.form.get('group')
     password = request.form.get('password')
-    remember = True if request.form.get('remember') else False
+
 
     user = User.query.filter_by(group=group).first()
 
@@ -25,7 +25,7 @@ def login_post():
         flash('Please check your login details and try again.')
         return redirect(url_for('auth.login'))
 
-    login_user(user, remember=remember)
+    login_user(user)
     return redirect(url_for('views.profile'))
 
 
