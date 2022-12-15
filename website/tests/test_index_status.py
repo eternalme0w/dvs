@@ -8,5 +8,7 @@ def test_index_status():
     assert res2.status_code == 200
     res3 = client.get("/todo")
     assert res3.status_code == 200
+    res4 = client.get('/capacity')
+    assert res4.status_code == 200
 
 
