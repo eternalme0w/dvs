@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<div class="page {{page_class}}">
+
+    <div class="page-header">
+        <div class="lines">
+
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+            <a href="/" class="page-exit">
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="page-title no-copy"><p>{{page_title}}</p></div>
+        </div>
+    </div>
+
+    {% block page_content -%}
+
+    {% endblock%}
+
+</div>
+
+{% endblock %}

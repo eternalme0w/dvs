@@ -1,0 +1,66 @@
+{% extends 'base-page.html' %}
+{% block page_content %}
+{{ super() }}
+
+
+
+<div class="page-content schedule-page-content">
+
+    <div class="schedule-date no-copy" id="schedule-date">{{sc_date}}</div>
+
+    <div class="fulltable no-copy"> 
+
+        <a href="{{'/schedule/date/' + (current_date - pendulum.duration(hours=24)).strftime('%d/%m/%Y')}}" class="schedule-arrow-container no-copy"><img class="arrow" src="{{url_for('static',filename='img/next-l.png')}}"></a>
+
+        <div class="scroll-table no-copy">
+
+            <table >
+                <thead>
+                    <tr class="tr-head no-copy">
+                        <td class="td-time">time</td>
+                        <td class="td-info">subject</td>
+                        <td class="td-place">place</td>
+                        <td class="td-teacher">teacher</td>
+                    </tr>
+                </thead>
+            </table>  
+
+            <div class="scroll-table-body">
+                
+                <table class="head-table">
+                    <tbody>
+
+                        {% if sc == 0 %}
+
+                            <h1>ВЫХОДНОЙ БРАТ</h1>
+
+                        {% else %}
+
+                            {% for less in sc %}
+
+                                <tr class="tr-content no-copy">
+                                    <td class="td-time">{{less['time']}}</td>
+                                    <td class="td-info">{{less['subject']}}</td>
+                                    <td class="td-place">{{less['place']}}</td>
+                                    <td class="td-teacher">{{less['teacher']}}</td>
+                                </tr>
+
+                            {% endfor %}
+
+                        {% endif %}
+
+                        </tbody>
+                    </table>
+
+                </div>  
+
+            </div>
+
+
+            <a href="{{'/schedule/date/' + (current_date + pendulum.duration(hours=24)).strftime('%d/%m/%Y')}}" class="schedule-arrow-container no-copy"><img class="arrow" src="{{url_for('static',filename='img/next-r.png')}}"></a>
+
+        </div>
+    </div>
+
+
+    {% endblock %}
