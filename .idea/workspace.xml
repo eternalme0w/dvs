@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dd84287-7464-4e67-b243-a2e41b6d9033" name="Changes" comment="тесты pytest">
-      <change afterPath="$PROJECT_DIR$/website/templates/todo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/todo.py" afterDir="false" />
+    <list default="true" id="4dd84287-7464-4e67-b243-a2e41b6d9033" name="Changes" comment="todo наработки сервер и хтмл">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/Todolist.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/todo_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +33,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.todo">
+  <component name="RunManager" selected="Python.main">
     <configuration name="client_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dvs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670976746668</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="todo наработки сервер и хтмл">
+      <created>1671037583662</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671037583662</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="тесты pytest" />
-    <option name="LAST_COMMIT_MESSAGE" value="тесты pytest" />
+    <MESSAGE value="todo наработки сервер и хтмл" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo наработки сервер и хтмл" />
   </component>
 </project>
