@@ -102,8 +102,16 @@
 
         </div>
 
+{% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flash-text">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
 
         <form class="todo-form" action="/post_task" method="post" class="form-example">
+
                   <div>
                     <input placeholder="text" class="form-text" name="text" autocomplete="off"  id="name" required>
                 </div>
