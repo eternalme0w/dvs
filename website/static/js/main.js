@@ -1,15 +1,5 @@
-import axios from 'axios'
-
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    fetch('http://127.0.0.1:5004/testapi')
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-    console.log(data);
-    });
 
 	const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 	const days = ["Mon","Tues","Wed","Thurs","Fri","Sat","Sun"];
