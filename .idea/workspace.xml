@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dd84287-7464-4e67-b243-a2e41b6d9033" name="Changes" comment="obnova 3.0">
+    <list default="true" id="4dd84287-7464-4e67-b243-a2e41b6d9033" name="Changes" comment="тесты еще">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instance/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/instance/db.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/tests/test_get_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/tests/test_get_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/tests/test_index_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/tests/test_index_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/tests/test_post_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/tests/test_post_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/auth.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests in tests">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dvs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in tests" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests in tests" />
         <item itemvalue="Python tests.Python tests in test_index_status.py" />
         <item itemvalue="Python tests.Python tests in test_get_list.py" />
         <item itemvalue="Python tests.Python tests in test_post_task.py" />
@@ -162,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671128263367</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="тесты еще">
+      <created>1671134074780</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671134074780</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +185,7 @@
     <MESSAGE value="тесты pytest" />
     <MESSAGE value="todo наработки сервер и хтмл" />
     <MESSAGE value="obnova 3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="obnova 3.0" />
+    <MESSAGE value="тесты еще" />
+    <option name="LAST_COMMIT_MESSAGE" value="тесты еще" />
   </component>
 </project>
