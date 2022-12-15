@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<div class="icons-container">
+    
+    <a href="/capacity" class="folder block no-copy clickable">
+        <div class="folder-icon"><img class="folder-img icon" src="../static/img/statistics.png"></div>
+        <span class="folder-text text">capacity</span>
+    </a>
+
+    <a href="/todo" class="folder block no-copy clickable">
+        <div class="folder-icon"><img class="folder-img icon" src="../static/img/todo.png"></div>
+        <span class="folder-text text">todo</span>
+    </a>
+
+    <a href="/schedule/today" class="file block no-copy clickable">
+        <div class="file-icon"><img class="folder-img icon" src="../static/img/calendar.png"></div>
+        <span class="file-text text">schedule</span>
+    </a>
+
+</div>
+{% endblock %}
