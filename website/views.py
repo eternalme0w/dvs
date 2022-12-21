@@ -24,8 +24,8 @@ def main():
 def capacity():
     time = whatistimern()
     date=datetime.datetime.today().isoweekday()
-    capacity3 = int(predict(690,3,date))
-    capacity6 = int(predict(690,6,date))
+    capacity3 = int(predict(time,3,date))
+    capacity6 = int(predict(time,6,date))
     return render_template('capacity.html', page_class='capacity-page', page_title='capacity', len3=capacity3,len6=capacity6)
 
 

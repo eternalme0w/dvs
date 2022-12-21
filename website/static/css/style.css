@@ -526,7 +526,7 @@ color: white;
     display: flex;
     flex-direction:row;
     align-items: center;
-    min-height:200px;
+    min-height:230px;
     min-width:400px;
 }
 
@@ -560,7 +560,7 @@ color: white;
 
 .oneball{
     min-height: 80px;
-    min-width: 25px;
+    min-width: 50px;
     margin-right: 2px;
     margin-left: 2px;
     background-color: black;
