@@ -521,3 +521,47 @@ color: white;
 .ref-signup{
     color:#998ff2;
 }
+
+.battetyandcomp{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    min-height:200px;
+    min-width:400px;
+}
+
+.battery{
+    min-height:100px;
+    min-width:286px;
+    border: 7px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+}
+.comp{
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.batteryend{
+    min-height: 50px;
+    min-width: 15px;
+    border: 7px solid black;
+    border-left: none;
+    margin-right: 30px;
+
+}
+
+.capacity-page-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oneball{
+    min-height: 80px;
+    min-width: 25px;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-color: black;
+}

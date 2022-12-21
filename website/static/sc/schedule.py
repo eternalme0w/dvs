@@ -1,6 +1,13 @@
-
+import datetime
 from openpyxl import load_workbook
 import pendulum
+
+def whatistimern():
+    now = datetime.datetime.now()
+    string = list()
+    string.append(str(now.time()).split(":"))
+    timeinmin=int(string[0][0])*60+int(string[0][1])
+    return timeinmin
 
 def get_date(date):
 

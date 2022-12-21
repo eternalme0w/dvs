@@ -1,9 +1,11 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 import pendulum
 import requests
-from .static.sc.schedule import date_schedule, get_date
+import datetime
+from .static.sc.schedule import date_schedule, get_date,whatistimern
 from . import db
 from .models import List, ListFields, User, UserFields
+from .static.sc.learn import predict
 
 from flask_login import current_user, login_required
 
@@ -20,7 +22,11 @@ def main():
 @views.route('/capacity')
 @login_required
 def capacity():
-    return render_template('capacity.html', page_class='capacity-page', page_title='capacity')
+    time = whatistimern()
+    date=datetime.datetime.today().isoweekday()
+    capacity3 = int(predict(690,3,date))
+    capacity6 = int(predict(690,6,date))
+    return render_template('capacity.html', page_class='capacity-page', page_title='capacity', len3=capacity3,len6=capacity6)
 
 
 @views.route('/todo')
