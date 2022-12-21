@@ -56,7 +56,9 @@ def signup_post():
     db.session.commit()
 
     return redirect(url_for('auth.login'))
-
+@auth.route('/capacitynologin')
+def capacitywithoutlogin():
+    return redirect(url_for('views.capacity'))
 
 @auth.route('/logout')
 @login_required

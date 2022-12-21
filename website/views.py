@@ -20,7 +20,6 @@ def main():
 
 
 @views.route('/capacity')
-@login_required
 def capacity():
     time = whatistimern()
     date=datetime.datetime.today().isoweekday()
