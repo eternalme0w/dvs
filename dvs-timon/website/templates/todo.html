@@ -1,0 +1,130 @@
+{% extends 'base-page.html' %}
+{% block page_content %}
+{{ super() }}
+
+
+
+<div class="page-content schedule-page-content page-todo">
+
+    <div class="todo-head">What we need to do today...</div>
+
+    <div class="fulltable no-copy"> 
+
+        <div class="scroll-table todo-table no-copy">
+
+            <table >
+                <thead>
+                </thead>
+            </table>  
+
+            <div class="scroll-table-body">
+                
+                <table class="head-table">
+                    <tbody>
+
+                            
+                                {% if res.len == 0 %}
+                                <h1>
+                                    There are not tasks
+                                </h1>
+                                {% else %}
+                                {% for i in range(len)%}
+                                <tr class="tr-content no-copy">
+
+                                    {% if not res[i]['complete'] %}
+                                    
+                                        <td class="td-time todo-done">
+
+                                            <form  action="/compl_task" method="post" class="form-example">
+
+                                                <button class="del-add-compl" name="id" value="{{res[i]['id']}}">
+
+                                                    <img class="todo-img" src="../static/img/dry-clean.png">
+
+                                                </button>
+
+                                            </form>
+
+                                        </td>
+
+                                    {% else %}
+
+                                        <td class="td-time todo-done">
+
+                                            <form  action="/encompl_task" method="post" class="form-example">
+
+                                                <button class="del-add-compl" name="id" value="{{res[i]['id']}}">
+
+                                                    <img class="todo-img" src="../static/img/checked.png">
+
+                                                </button>
+
+                                            </form>
+
+                                        </td>
+
+                                        
+                                    {% endif %}
+
+
+                            
+                                    <td class="td-info todo-text">{{res[i]['text']}}</td>
+                                    <td class="td-place todo-deadline">{{res[i]['deadline']}}</td>
+
+
+                                    <td class="td-teacher todo-pomo no-copy">
+
+                                        <form  action="/del_task" method="post" class="form-example">
+
+                                            <button class="del-add-compl" name="id" value="{{res[i]['id']}}" >
+
+                                                <img class="todo-img" src="../static/img/trash.png">
+
+                                            </button>
+
+                                        </form>
+
+                                    </td>
+
+
+                                </tr>
+                                {% endfor %}
+                                {% endif %}
+
+                            
+
+                        </tbody>
+                    </table>
+
+                </div>  
+
+            </div>
+
+        </div>
+
+{% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flash-text">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form class="todo-form" action="/post_task" method="post" class="form-example">
+
+                  <div>
+                    <input placeholder="text" class="form-text" name="text" autocomplete="off"  id="name" required>
+                </div>
+                <div>
+                    <input placeholder="deadline" class="form-deadline" name="deadline" autocomplete="off" id="email" required>
+                </div>
+                <div>
+                    <input class="button-send" type="submit" value="add">
+                </div>
+        </form>
+
+
+    </div>
+
+
+    {% endblock %}

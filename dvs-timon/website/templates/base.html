@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LETI HELPER</title>
+    <link rel="icon" type="image/x-icon" href="../static/img/icons8-internet-explorer-64.png">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+
+<body>
+
+    <div class="fullscrean">
+
+        <div class="main-container">
+            
+            <div class="header-container">
+                <div class="time no-copy" id="time"></div>
+                <div class="LETI no-copy">LETI HELPER</div>
+                 <div>
+
+                     {% if current_user.is_authenticated %}
+                        <a href="{{ url_for('views.main') }}">
+                            Profile
+                        </a>
+                        {% endif %}
+                        {% if not current_user.is_authenticated %}
+                        <a href="{{ url_for('auth.login') }}">
+                            Login
+                        </a>
+                        <a href="{{ url_for('auth.signup') }}">
+                            Sign Up
+                        </a>
+                        {% endif %}
+                        {% if current_user.is_authenticated %}
+                        <a href="{{ url_for('auth.logout') }}" >
+                            Logout
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="log-btn no-copy clickable" id="open-login-form">login</div>
+            </div>
+
+            <div class="shield" id="shield"></div>
+
+            <div class="login-section" id="login-section">
+
+                    <div class="lines">
+                        
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+
+                            <div class="page-exit" id="close-login-section">
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="page-title no-copy"><p>login</p></div>
+                        </div>
+                </div>
+
+            <div class="content-container" id="content-container">
+
+
+                {% block content -%}
+
+                {% endblock%}
+
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+<script type="text/javascript" src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+</html>
