@@ -5,22 +5,26 @@ from .static.sc.schedule import date_schedule, get_date
 from . import db
 from .models import List, ListFields, User, UserFields
 
-from flask_login import current_user
+from flask_login import current_user, login_required
 
 views = Blueprint('views', __name__)
 
 
-@views.route('/')
+
+@views.route('/main')
+@login_required
 def main():
     return render_template('index.html')
 
 
 @views.route('/capacity')
+@login_required
 def capacity():
-    return render_template('capacity.html', page_class = 'capacity-page', page_title = 'capacity')
+    return render_template('capacity.html', page_class='capacity-page', page_title='capacity')
 
 
 @views.route('/todo')
+@login_required
 def todo():
     user = User.query.filter(User.group == current_user.group).first()
     response = user.list
@@ -73,6 +77,7 @@ def encompl_task():
 
 
 @views.route('/schedule/today')
+@login_required
 def schedule():
     group = current_user.group
     today = pendulum.now()
@@ -84,11 +89,12 @@ def schedule():
 
 
 @views.route('/schedule/date/<n>/<m>/<y>')
+@login_required
 def scdate(n, m, y):
-
+    group = current_user.group
     date = get_date([int(n), int(m), int(y)])
     d = date.strftime("%d/%m/%Y")
-    today_sc = date_schedule(1307, date)
+    today_sc = date_schedule(group, date)
     return render_template('schedule.html',
         page_class = 'schedule-page', page_title = 'schedule', 
         sc_date = d, sc = today_sc, current_date = date, pendulum = pendulum)

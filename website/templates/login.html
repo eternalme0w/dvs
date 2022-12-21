@@ -1,34 +1,44 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div>
-    <h3>Login</h3>
+<div class="log-page">
 
-    <div>
+
+
+    <h3 class="log-head no-copy">Login</h3>
+
+    <div class="log-body">
 
         {% with messages = get_flashed_messages() %}
             {% if messages %}
-                <div>
+                <div style="text-align:center">
                     {{ messages[0] }}
                 </div>
             {% endif %}
         {% endwith %}
 
-        <form method="POST" action="/login">
+        <form class="log-form" method="POST" action="/">
+
             <div>
-                <div>
-                    <input name="group" placeholder="Your group" autofocus="">
-                </div>
+                <input class="log-input" name="group" placeholder="Your group" autofocus="">
             </div>
 
             <div>
-                <div>
-                    <input type="password" name="password" placeholder="Your Password">
-                </div>
+                <input class="log-input" type="password" name="password" placeholder="Your Password">
             </div>
 
-            <button>Login</button>
+            <button class="log-butt no-copy">Login</button>
+
         </form>
+
+        <div class="pls-signup">
+            If you don't have an account please
+            <a class="ref-signup" href="{{ url_for('auth.signup') }}">
+                Sign Up
+                </a>
+        </div>
+
+
     </div>
 
 </div>

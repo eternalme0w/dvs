@@ -32,7 +32,12 @@
 
                         {% if sc == 0 %}
 
-                            <h1>ВЫХОДНОЙ БРАТ</h1>
+                            <h1 style="text-align:center">Today is your day off!</h1>
+                        <div class="smiles">
+                            <img class="smile-img" src="{{url_for('static',filename='img/smile2.png')}}">
+                            <img class="smile-img" src="{{url_for('static',filename='img/smile1.png')}}">
+                            <img class="smile-img" src="{{url_for('static',filename='img/smile3.png')}}">
+                        </div>
 
                         {% else %}
 
