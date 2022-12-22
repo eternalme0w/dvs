@@ -67,7 +67,8 @@ def day_to_num(day):
     elif day == sat:
         return 5
 
-book = load_workbook(filename='C:/Users/timur/OneDrive/Документы/GitHub/dvs/website/static/sc/books/fcti-2.xlsx')
+book = load_workbook(filename = 'website/static/sc/books/fcti-2.xlsx')
+#book = load_workbook(filename = 'website/static/sc/books/fcti-full.xlsx')
 sheet = book.active
 
 time, week, day, subject, kafedra, teacher, lesson_type, form, aud, group, course = [i for i in range(11)]

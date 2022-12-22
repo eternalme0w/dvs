@@ -24,8 +24,8 @@ def capacity():
     time = whatistimern()
     date=datetime.datetime.today().isoweekday()
     if date!=7:
-        capacity3 = int(predict(810,3,date))
-        capacity6 = int(predict(810,6,date))
+        capacity3 = int(predict(time,3,date))
+        capacity6 = int(predict(time,6,date))
     else:
         capacity3=0
         capacity6=0
