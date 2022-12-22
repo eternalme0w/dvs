@@ -5,14 +5,16 @@ def test_delete_list():
     client = app.test_client()
 
     with app.app_context():
-        task = List.query.filter_by(id=7).first()
-        assert task != None
+        del_task = List.query.filter_by(id=4).first()
+        assert del_task != None
 
-    client.post('/del_task', data = {'id':'7'})
+    client.post('/', data={"group": "1307", "password": "1307"})
+
+    client.post('/del_task', data={'id':'4'})
     res = client.get('/todo',follow_redirects=True)
     assert res.status_code == 200
 
     with app.app_context():
-        del_task = List.query.filter_by(id=7).first()
+        del_task = List.query.filter_by(id=4).first()
         assert del_task == None
 

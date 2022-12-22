@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dd84287-7464-4e67-b243-a2e41b6d9033" name="Changes" comment="капасити на логин">
+    <list default="true" id="4dd84287-7464-4e67-b243-a2e41b6d9033" name="Changes" comment="грамотности добавил">
+      <change afterPath="$PROJECT_DIR$/website/tests/test_signup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instance/db.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/instance/db.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/sc/6корпус.xlsx - Лист1 (2).csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/sc/dataset_-_dataset_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/sc/learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/sc/learn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/capacity.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/capacity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/instance/db.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/.idea/pythonProject2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/font/PixeloidMono-1G8ae.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/font/basis33.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/12px Cross.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/12px Flip Grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/12px Flip Grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/Dots 4px.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/FOLDER.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/accepted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icons8-calendar-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icons8-internet-explorer-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icons8-itinerary-80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icons8-journey-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icons8-love-path-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icons8-waypoint-map-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/img-folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/img-header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/img-text-file.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/lighthouse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/next-l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/next-r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/notes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/open-folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/presentation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/statistics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/sc/schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/sc/schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/tests/test_delete_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/tests/test_delete_post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/tests/test_get_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/tests/test_index_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/tests/test_index_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/tests/test_post_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/tests/test_post_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/tests/test_schedule_get.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/tests/test_schedule_get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,50 +82,8 @@
       <recent name="C:\Users\timur\OneDrive\Документы\GitHub\dvs\website\static\sc\books" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="df" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dvs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/website" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/website/df.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dvs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\timur\AppData\Local\Programs\Python\Python39\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_get_list.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in tests">
+    <configuration name="Python tests for test_delete_post.test_delete_list" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="dvs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,11 +93,39 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/website/tests/test_get_list.py&quot;" />
+      <option name="_new_target" value="&quot;test_delete_post.test_delete_list&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_index_status.test_index_status" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="dvs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/website/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_index_status.test_index_status&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_post_task.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="dvs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/website/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/website/tests/test_post_task.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_index_status.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_schedule_get.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="dvs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +135,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/website/tests/test_index_status.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/website/tests/test_schedule_get.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -135,19 +154,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.df" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python tests.Python tests in test_get_list.py" />
-      <item itemvalue="Python tests.Python tests in test_index_status.py" />
+      <item itemvalue="Python tests.Python tests for test_delete_post.test_delete_list" />
+      <item itemvalue="Python tests.Python tests for test_index_status.test_index_status" />
+      <item itemvalue="Python tests.Python tests in test_post_task.py" />
+      <item itemvalue="Python tests.Python tests in test_schedule_get.py" />
       <item itemvalue="Python tests.Python tests in tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.df" />
         <item itemvalue="Python tests.Python tests in tests" />
-        <item itemvalue="Python tests.Python tests in test_index_status.py" />
-        <item itemvalue="Python tests.Python tests in test_get_list.py" />
+        <item itemvalue="Python tests.Python tests for test_delete_post.test_delete_list" />
+        <item itemvalue="Python tests.Python tests in test_post_task.py" />
+        <item itemvalue="Python tests.Python tests in test_schedule_get.py" />
+        <item itemvalue="Python tests.Python tests for test_index_status.test_index_status" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671702129467</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="грамотности добавил">
+      <created>1671709314528</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671709314528</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +283,14 @@
     <MESSAGE value="грамотный логин" />
     <MESSAGE value="вврис от матвея салам летит плотный" />
     <MESSAGE value="капасити на логин" />
-    <option name="LAST_COMMIT_MESSAGE" value="капасити на логин" />
+    <MESSAGE value="грамотности добавил" />
+    <option name="LAST_COMMIT_MESSAGE" value="грамотности добавил" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="res.headers" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
