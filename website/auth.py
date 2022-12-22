@@ -48,7 +48,8 @@ def signup_post():
         flash('Email address already exists')
         return redirect(url_for('auth.signup'))
     if group not in groups:
-        flash('this group is not exist')
+        flash('This group is not exist')
+        return redirect(url_for('auth.signup'))
 
     new_user = User(group=group, password=generate_password_hash(password, method='sha256'))
 

@@ -5,12 +5,12 @@ from sklearn.tree import DecisionTreeClassifier
 
 def predict(time,comp,date):
     date3 = {
-        1 : 35,
-        2 : 47,
-        3 : 47,
-        4 : 48,
-        5 : 40,
-        6 : 14,
+        1: 35,
+        2: 47,
+        3: 47,
+        4: 48,
+        5: 40,
+        6: 14,
     }
 
     date6 = {
@@ -22,10 +22,10 @@ def predict(time,comp,date):
     }
 
     if comp==6:
-        cafe = pd.read_csv('W:/тимона и пумбы наработки/dvs/website/static/sc/6корпус.xlsx - Лист1 (2).csv')
+        cafe = pd.read_csv('website/static/sc/6корпус.xlsx - Лист1 (2).csv')
         datefor=date6[date]
     elif comp==3:
-        cafe = pd.read_csv('W:/тимона и пумбы наработки/dvs/website/static/sc/dataset_-_dataset_6.csv')
+        cafe = pd.read_csv('website/static/sc/dataset_-_dataset_6.csv')
         datefor = date3[date]
     X = cafe.drop(columns=['load'])
     Y = cafe['load']
@@ -35,5 +35,5 @@ def predict(time,comp,date):
 
     m = DecisionTreeClassifier()
     m.fit(X.values, Y.values)
-    pred = m.predict([[datefor, time]])
+    pred = m.predict([[datefor, 930]])
     return pred
