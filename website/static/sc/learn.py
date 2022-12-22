@@ -25,10 +25,10 @@ def predict(time,comp,date):
     }
 
     if comp==6:
-        cafe = pd.read_csv('website/static/sc/6корпус.xlsx - Лист1 (2).csv')
+        cafe = pd.read_csv('website/static/sc/dataset6.csv')
         datefor=date6[date]
     elif comp==3:
-        cafe = pd.read_csv('website/static/sc/dataset_-_dataset_6.csv')
+        cafe = pd.read_csv('website/static/sc/dataset3.csv')
         datefor = date3[date]
     X = cafe.drop(columns=['load'])
     Y = cafe['load']

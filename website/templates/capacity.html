@@ -3,24 +3,75 @@
 {{ super() }}
 <div class="page-content capacity-page-content">
     <div class="todo-head">Where you can eat right now...</div>
-    <div class="battetyandcomp">
-        <div class="battery">
-        {% for less in range(len3) %}
-            <div class="oneball"></div>
-        {% endfor %}
-        </div>
-        <div class="batteryend"></div>
-        <div class="comp no-copy">3 campus load</div>
-    </div>
+    <div class="batteries ">
 
-    <div class="battetyandcomp">
-        <div class="battery">
-        {% for less in range(len6) %}
-            <div class="oneball"></div>
-        {% endfor %}
+        <div class="battetyandcomp">
+                <div class="battery">
+                {% for less in range(len3) %}
+                    <div class="oneball"></div>
+                {% endfor %}
+                </div>
+                <div class="batteryend"></div>
+                <div class="comp no-copy">
+
+                    {% if len3 == 5%}
+                        <div class="recommendation">
+                            Sorry, but the canteen of campus 3 if full..
+                        </div>
+                    {%endif%}
+                    {% if len3 == 4%}
+                        <div class="recommendation">
+                            You have a chance to get into the canteen of campus 3!
+                        </div>
+                    {%endif%}
+                    {% if len3 < 4%}
+                        <div class="recommendation">
+                            You are welcome to canteen of campus 3!
+                        </div>
+                    {%endif%}
+
+                </div>
+
+                 <div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="battetyandcomp">
+                <div class="battery">
+                {% for less in range(len6) %}
+                    <div class="oneball"></div>
+                {% endfor %}
+                </div>
+                <div class="batteryend"></div>
+                <div class="comp no-copy">
+
+                    {% if len6 == 5%}
+                        <div class="recommendation">
+                            Sorry, but the canteen of campus 6 if full..
+                        </div>
+                    {%endif%}
+                    {% if len6 == 4%}
+                        <div class="recommendation">
+                            You have a chance to get into the canteen of campus 6!
+                        </div>
+                    {%endif%}
+                    {% if len6 < 4%}
+                        <div class="recommendation">
+                            You are welcome to canteen of campus 6!
+                        </div>
+                    {%endif%}
+
+                </div>
+
+            </div>
+
+
         </div>
-        <div class="batteryend"></div>
-        <div class="comp no-copy">6 campus load</div>
-    </div>
+
 </div>
 {% endblock %}

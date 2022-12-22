@@ -11,7 +11,7 @@
 
         {% with messages = get_flashed_messages() %}
             {% if messages %}
-                <div style="text-align:center">
+                <div style="text-align:center; margin-bottom: 10px">
                     {{ messages[0] }}
                 </div>
             {% endif %}
@@ -20,11 +20,11 @@
         <form class="log-form" method="POST" action="/">
 
             <div>
-                <input class="log-input" name="group" placeholder="Your group" autofocus="">
+                <input class="log-input" name="group" placeholder="Your group" autofocus="" required>
             </div>
 
             <div>
-                <input class="log-input" type="password" name="password" placeholder="Your Password">
+                <input class="log-input" type="password" name="password" placeholder="Your Password" required>
             </div>
 
             <button class="log-butt no-copy">Login</button>
@@ -32,14 +32,16 @@
         </form>
 
         <div class="pls-signup">
-            If you don't have an account please
+            don't have an account?
             <a class="ref-signup" href="{{ url_for('auth.signup') }}">
                 Sign Up
                 </a>
         </div>
 
         <div class="pls-capacity">
-            If you just want to see the workload of the canteens
+            <div class="pls-cap-text">
+                If you just want to see the workload of the canteens
+            </div>
             <a href="/capacity" class="folder block no-copy clickable capacity-on-log">
         <div class="folder-icon"><img class="folder-img icon" src="../static/img/statistics.png"></div>
         <span class="folder-text text">capacity</span>

@@ -45,10 +45,10 @@ def signup_post():
     user = User.query.filter_by(group=group).first()
 
     if user:
-        flash('Email address already exists')
+        flash('This group already exists')
         return redirect(url_for('auth.signup'))
     if group not in groups:
-        flash('This group is not exist')
+        flash('This group does not exist')
         return redirect(url_for('auth.signup'))
 
     new_user = User(group=group, password=generate_password_hash(password, method='sha256'))
@@ -57,6 +57,7 @@ def signup_post():
     db.session.commit()
 
     return redirect(url_for('auth.login'))
+
 @auth.route('/capacitynologin')
 def capacitywithoutlogin():
     return redirect(url_for('views.capacity'))

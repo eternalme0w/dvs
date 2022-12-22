@@ -514,7 +514,7 @@ color: white;
 }
 
 .pls-signup{
-    margin-top:100px;
+    margin-top:5px;
     font-weight: 500;
     font-size: 20px;
     text-align:center;
@@ -531,6 +531,7 @@ color: white;
     align-items: center;
     min-height:230px;
     min-width:400px;
+    justify-content:center
 }
 
 .battery{
@@ -569,12 +570,25 @@ color: white;
     background-color: black;
 }
 .pls-capacity{
-    margin-top: 50px;
     font-weight: 500;
-    font-size: 20px;
+
+}
+
+.pls-cap-text{
+    font-size: 27px;
 }
 
 .capacity-on-log{
      width:100%;
 
 }
+
+.batteries{
+   margin-top: 60px;
+}
+
+.recommendation{
+    font-size: 30px;
+    max-width: 330px
+}
+
