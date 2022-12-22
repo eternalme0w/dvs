@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dd84287-7464-4e67-b243-a2e41b6d9033" name="Changes" comment="проверки и хтмл на авторизацию">
+    <list default="true" id="4dd84287-7464-4e67-b243-a2e41b6d9033" name="Changes" comment="фикс бага регистрации">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instance/db.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/instance/db.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/static/sc/learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/sc/learn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/capacity.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/capacity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671656454421</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="фикс бага регистрации">
+      <created>1671667920268</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671667920268</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,6 +249,7 @@
     <MESSAGE value="тесты еще" />
     <MESSAGE value="грамотный логин" />
     <MESSAGE value="вврис от матвея салам летит плотный" />
-    <option name="LAST_COMMIT_MESSAGE" value="вврис от матвея салам летит плотный" />
+    <MESSAGE value="фикс бага регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="фикс бага регистрации" />
   </component>
 </project>
