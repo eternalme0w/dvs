@@ -11,6 +11,7 @@ def predict(time,comp,date):
         4: 48,
         5: 40,
         6: 14,
+        7 : 0,
     }
 
     date6 = {
@@ -19,6 +20,8 @@ def predict(time,comp,date):
         3: 18,
         4: 16,
         5: 16,
+        6 : 0,
+        7 : 0,
     }
 
     if comp==6:
@@ -35,5 +38,5 @@ def predict(time,comp,date):
 
     m = DecisionTreeClassifier()
     m.fit(X.values, Y.values)
-    pred = m.predict([[datefor, 930]])
+    pred = m.predict([[datefor, time]])
     return pred
